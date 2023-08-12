@@ -1,15 +1,15 @@
 import { Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import PricingPage from './pages/PricingPage';
-import ContactPage from './pages/ContactPage';
-import SpacesPage from './pages/SpacesPage';
+import HomePage from './pages/Home/HomePage';
+import AboutPage from './pages/About/AboutPage';
+import PricingPage from './pages/Pricing/PricingPage';
+import ContactPage from './pages/Contact/ContactPage';
+import SpacesPage from './pages/Spaces/SpacesPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="pt-[65px] pb-[100px] px-[7%] web:pt-[100px] web:pb-[140px] web:px-[8%]">
       <Navbar />
       <Routes>
         <Route
