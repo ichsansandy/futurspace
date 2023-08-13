@@ -1,11 +1,22 @@
 /** @type {import('tailwindcss').Config} */
+import plugin from 'tailwindcss/plugin';
 export default {
   content: ['./index.html', './src/**/*.jsx'],
   theme: {
-    screens:{
-      'web':'700px'
+    screens: {
+      web: '940px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#0192FE',
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addBase }) {
+      addBase({
+        h3: { fontSize: '32px', fontWeight: '700', lineHeight: '40.32px' },
+      });
+    }),
+  ],
 };
