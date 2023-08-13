@@ -6,7 +6,7 @@ import PricingSubscribe from '../../components/pricing/PricingSubscribe';
 
 export default function PricingPage() {
   return (
-    <main>
+    <main className=''>
       <PricingHero />
       <PricingPricing/>
       <PricingFAQ/>
