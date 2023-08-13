@@ -13,12 +13,14 @@ export default {
     extend: {
       colors: {
         primary: '#0192FE',
+        secondary: '#c6e4fb',
       },
     },
   },
   plugins: [
     plugin(function ({ addBase }) {
       addBase({
+        h2: { fontSize: '48px', fontWeight: '700', lineHeight: '67.2px' },
         h3: { fontSize: '32px', fontWeight: '700', lineHeight: '40.32px' },
       });
     }),
