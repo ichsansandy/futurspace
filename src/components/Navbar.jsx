@@ -1,15 +1,19 @@
 import { useState } from 'react';
 import { brandName } from '../data/mockData';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { menus } from '../data/mockData';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { pathname } = useLocation();
 
   return (
-    <div className="flex justify-between items-center relative transition-all">
-      <div className="flex gap-4 items-center uppercase">
+    <div className={`flex justify-between items-center relative transition-all `}>
+      <NavLink
+        to="/"
+        className="flex gap-4 items-center uppercase"
+      >
         <svg
           width="40"
           height="40"
@@ -21,7 +25,7 @@ export default function Navbar() {
             cx="20"
             cy="20"
             r="20"
-            className="fill-primary"
+            className={`${pathname === '/about' ? 'fill-white' : 'fill-primary'}`}
           />
           <rect
             x="10.7461"
@@ -29,7 +33,7 @@ export default function Navbar() {
             width="5.97015"
             height="5.97015"
             rx="1.19403"
-            fill="#F9FAFF"
+            className={`${pathname === '/about' ? 'fill-primary' : 'fill-[#F9FAFF]'}`}
           />
           <rect
             x="18.5073"
@@ -37,7 +41,7 @@ export default function Navbar() {
             width="10.1493"
             height="5.97015"
             rx="1.19403"
-            fill="#F9FAFF"
+            className={`${pathname === '/about' ? 'fill-primary' : 'fill-[#F9FAFF]'}`}
           />
           <rect
             x="20.2983"
@@ -53,11 +57,11 @@ export default function Navbar() {
             width="7.76119"
             height="10.7463"
             rx="1.19403"
-            fill="#F9FAFF"
+            className={`${pathname === '/about' ? 'fill-primary' : 'fill-[#F9FAFF]'}`}
           />
         </svg>
         <h3 className="text-primary uppercase hidden min-[375px]:block">{brandName}</h3>
-      </div>
+      </NavLink>
       <button
         onClick={() => {
           setIsOpen(!isOpen);
@@ -69,14 +73,14 @@ export default function Navbar() {
       <nav
         className={`${
           isOpen ? 'flex translate-y-0' : 'flex scale-0 -translate-y-52 web:flex web:scale-100 web:translate-y-0'
-        } absolute items-center min-h-screen web:min-h-fit left-0 top-[100%] w-full box-border transition-all bg-white flex-col web:static web:flex-row  web:justify-end gap-4`}
+        } absolute items-center min-h-screen web:min-h-fit left-0 top-[100%] w-full box-border transition-all bg-white flex-col web:static web:flex-row  web:justify-end md:gap-5 xl:gap-14`}
       >
         <>
           {menus.map((menu, index) => (
             <NavLink
               key={index}
               to={menu.href}
-              className={({ isActive }) => (isActive ? 'capitalize font-extrabold' : 'capitalize font-light')}
+              className={({ isActive }) => (isActive ? 'capitalize font-extrabold hover:scale-110' : 'capitalize font-light hover:scale-110')}
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -84,7 +88,10 @@ export default function Navbar() {
               {menu.menu}
             </NavLink>
           ))}
-          <button className='text-white bg-primary px-[40px] py-[15px] rounded-[50px] ' type='button'>
+          <button
+            className="text-white bg-primary px-[40px] py-[15px] rounded-[50px] hover:scale-105 "
+            type="button"
+          >
             Sign up
           </button>
         </>
