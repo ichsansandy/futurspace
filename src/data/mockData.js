@@ -1,4 +1,4 @@
-export const brandName = 'futurspace';
+export const BrandName = 'futurspace';
 
 export const menus = [
   { menu: 'about', href: '/about' },
