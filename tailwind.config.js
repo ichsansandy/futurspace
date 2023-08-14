@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import plugin from 'tailwindcss/plugin';
+
 export default {
   content: ['./index.html', './src/**/*.jsx'],
   theme: {
@@ -13,11 +14,12 @@ export default {
     extend: {
       colors: {
         primary: '#0192FE',
+        secondary: '#2E3135',
       },
     },
   },
   plugins: [
-    plugin(function ({ addBase }) {
+    plugin(({ addBase }) => {
       addBase({
         h3: { fontSize: '32px', fontWeight: '700', lineHeight: '40.32px' },
       });
