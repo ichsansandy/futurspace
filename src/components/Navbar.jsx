@@ -70,14 +70,15 @@ export default function Navbar() {
       >
         {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
       </button>
+
       <nav
         className={`${
           isOpen ? 'flex translate-y-0' : 'flex scale-0 -translate-y-52 web:flex web:scale-100 web:translate-y-0'
-        } absolute items-center min-h-screen web:min-h-fit left-0 top-[100%] w-full box-border transition-all bg-background flex-col web:static web:flex-row  web:justify-end gap-4 md:gap-5 xl:gap-14`}
+        } absolute items-center min-h-screen web:min-h-fit left-0 top-[100%] w-full box-border transition-all bg-white flex-col web:static web:flex-row web:justify-end gap-4 md:gap-5 xl:gap-14`}
       >
-        {menus.map((menu, index) => (
+        {menus.map((menu) => (
           <NavLink
-            key={menu[index]}
+            key={menu.href}
             to={menu.href}
             className={({ isActive }) => (isActive ? 'capitalize font-extrabold hover:scale-110' : 'capitalize font-light hover:scale-110')}
             onClick={() => {
