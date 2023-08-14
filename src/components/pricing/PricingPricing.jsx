@@ -4,7 +4,6 @@ import { IoFlash } from 'react-icons/io5';
 import { FaStar } from 'react-icons/fa';
 import { RiVipDiamondFill } from 'react-icons/ri';
 
-
 const discount = 15;
 
 const pricing = [
@@ -49,51 +48,59 @@ const pricing = [
 ];
 
 export default function PricingPricing() {
-  const [isMonthly, setisMonthly] = useState(true);
+  const [isMtly, setisMonthly] = useState(true);
 
   return (
     <div className="flex flex-col items-center gap-16 web:py-[60px]">
-      <div className="bg-secondary p-1 rounded-[50px] overflow-hidden">
+      <div className="bg-accent p-1 rounded-[50px] overflow-hidden">
         <button
+          type="button"
           onClick={() => {
             setisMonthly(true);
           }}
           className={`${
-            isMonthly ? 'bg-white text-primary font-extrabold' : ''
+            isMtly ? 'bg-white text-primary font-extrabold' : ''
           } rounded-[50px] px-[20px] sm:px-[40px] py-[20px] transition-all`}
         >
           Monthly
         </button>
         <button
+          type="button"
           onClick={() => {
             setisMonthly(false);
           }}
           className={`${
-            isMonthly ? '' : 'bg-white text-primary font-extrabold'
+            isMtly ? '' : 'bg-white text-primary font-extrabold'
           } rounded-[50px] px-[10px] sm:px-[32px] py-[20px] transition-all`}
         >
-          Annual(save {discount}%)
+          Annual(save
+          {discount}
+          %)
         </button>
       </div>
       <div className="flex flex-col gap-[96.6px] web:flex-row web:gap-[30px]">
-        {pricing.map((price) => (
+        {pricing.map((p) => (
           <div
-            key={price.planName}
+            key={p.planName}
             className="px-[8%] sm:px-[68.8px] py-[61.1px] flex flex-col gap-[43.3px] bg-white rounded-3xl  border-primary even:border-2 transition-all hover:scale-110 web:gap-8 web:px-[60px] web:py-[44.5px] web:h-fit"
           >
             <div className="flex flex-col items-start gap-[43.3px]">
               <div className="text-white text-[30px] flex justify-center items-center bg-primary rounded-full w-[57.66px] aspect-square">
-                {price.planIcon}
+                {p.planIcon}
               </div>
-              <p className="text-[35.7px] web:text-2xl leading-[44.98px]">{price.planName}</p>
-              <h1 className="text-5xl sm:text-[65.9px] web:text-5xl leading-[83px] web:leading-[60px] font-bold">{`$${isMonthly ? price.pricePerMonth : (price.pricePerMonth*(1-(discount/100))).toFixed() }/mth`}</h1>
+              <p className="text-[35.7px] web:text-2xl leading-[44.98px]">{p.planName}</p>
+              <h1 className="text-5xl sm:text-[65.9px] web:text-5xl leading-[83px] web:leading-[60px] font-bold">
+                {`$
+              ${isMtly ? p.pricePerMonth : (p.pricePerMonth * (1 - discount / 100)).toFixed()}
+              /mth`}
+              </h1>
             </div>
             <hr className="h-px" />
             <div className="flex flex-col gap-[43.3px] web:gap-7">
-              {price.planBenefit.map((benefit) => (
+              {p.planBenefit.map((benefit) => (
                 <div
                   className="flex items-center gap-[21.97px] text-[28.83px] leading-[36.33px]"
-                  key={`${price.planName}-${benefit.benefit}`}
+                  key={`${p.planName}-${benefit.benefit}`}
                 >
                   <div className={`${benefit.isCheck ? 'text-green-400' : 'text-gray-400'}`}>
                     <IoMdCheckmark />
