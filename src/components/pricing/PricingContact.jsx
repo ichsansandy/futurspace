@@ -1,5 +1,4 @@
 import { HiPlay } from 'react-icons/hi2';
-import contact from './contact.png';
 
 export default function PricingContact() {
   return (
@@ -20,7 +19,7 @@ export default function PricingContact() {
           <img
             alt="contact"
             className=""
-            src={contact}
+            src="/images/contact.png"
           />
           <button
             type="button"

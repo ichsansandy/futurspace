@@ -1,6 +1,4 @@
 import { HiPlay } from 'react-icons/hi2';
-import contact from '../Pricing/contact.png';
-import ctaweb from './ctaweb.png';
 
 export default function ContactCTA() {
   return (
@@ -10,12 +8,12 @@ export default function ContactCTA() {
           <img
             alt="contact"
             className="web:hidden"
-            src={contact}
+            src="./images/contact.png"
           />
           <img
             alt="contact"
             className="hidden web:block"
-            src={ctaweb}
+            src="./images/ctaweb.png"
           />
           <button
             type="button"

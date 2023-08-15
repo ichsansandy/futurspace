@@ -155,3 +155,22 @@ export const mockAPIFooter = [
     subTitle3: 'forum',
   },
 ];
+
+export const faqsList = [
+  {
+    question: 'What are the benefits of joining the Futurspace network?',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare',
+  },
+  {
+    question: 'What should I expect from the screening process?',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare',
+  },
+  {
+    question: 'Is Telephone service available?',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare',
+  },
+  {
+    question: 'Is the money refundable if I am unable to register?',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare',
+  },
+];
