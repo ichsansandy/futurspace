@@ -34,10 +34,14 @@ export default function PricingContact() {
             We enable people to work where they want, when they want and how they want
           </p>
           <p className="text-[21px] leading-[30.9px] ">
-            We offer offices for lease by the day, by the week, or by the year. Choose from any of our 3000 locations.
+            We offer offices for lease by the day, by the week, or by the year.
+            Choose from any of our 3000 locations.
             Get a free quote!
           </p>
-          <button className="text-white bg-primary px-10 py-5 text-[21px] rounded-[50px] leading-[26px]">
+          <button
+            type="button"
+            className="text-white bg-primary px-10 py-5 text-[21px] rounded-[50px] leading-[26px]"
+          >
             Get Started
           </button>
         </div>
