@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink, useLocation } from 'react-router-dom';
-import { BrandName, menus } from '../data/mockData';
+import { BrandName, menus } from '../utils/mockAPI';
 import useStatusbar from '../hook/useStatusbar';
 
 export default function Navbar() {
