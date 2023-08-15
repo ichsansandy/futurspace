@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="grid grid-cols-1 gap-16 bg-background web:gap-32 pt-[65px] pb-[100px] px-[7%] web:pt-[100px] web:pb-[140px] web:px-[8%]">
+    <div className="relative grid grid-cols-1 gap-16 web:gap-32 pt-[65px] pb-[100px] px-[7%] web:pt-[100px] web:pb-[140px] web:px-[8%]">
       <Navbar />
       <Routes>
         <Route
