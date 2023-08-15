@@ -12,6 +12,12 @@ export default {
       web: '940px',
     },
     extend: {
+      fontSize: {
+        h2: '48px',
+      },
+      lineHeight: {
+        h2: '67.2px',
+      },
       boxShadow: {
         'custom-shadow': '0px 4.4795050621032715px 70px 0px rgba(0, 0, 0, 0.10)',
       },
