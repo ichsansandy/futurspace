@@ -1,3 +1,9 @@
+import MapSVG from './MapSVG';
+
 export default function ContactMap() {
-  return <div>ContactMap</div>;
+  return (
+    <div className="py-[60px]">
+      <MapSVG />
+    </div>
+  );
 }

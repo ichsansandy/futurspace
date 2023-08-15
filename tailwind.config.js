@@ -12,11 +12,17 @@ export default {
       web: '940px',
     },
     extend: {
+      boxShadow: {
+        'custom-shadow': '0px 4.4795050621032715px 70px 0px rgba(0, 0, 0, 0.10)',
+      },
       colors: {
         primary: '#0192FE',
         accent: '#c6e4fb',
         background: '#fcfcfc',
         secondary: '#2E3135',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
     },
   },

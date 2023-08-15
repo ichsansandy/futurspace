@@ -82,7 +82,7 @@ export default function PricingPricing() {
         {pricing.map((p) => (
           <div
             key={p.planName}
-            className="px-[8%] sm:px-[68.8px] py-[61.1px] flex flex-col gap-[43.3px] bg-white rounded-3xl  border-primary even:border-2 transition-all hover:scale-110 web:gap-8 web:px-[60px] web:py-[44.5px] web:h-fit"
+            className="shadow-custom-shadow px-[8%] sm:px-[68.8px] py-[61.1px] flex flex-col gap-[43.3px] bg-white rounded-3xl  border-primary even:border-2 transition-all hover:scale-110 web:gap-8 web:px-[60px] web:py-[44.5px] web:h-fit"
           >
             <div className="flex flex-col items-start gap-[43.3px]">
               <div className="text-white text-[30px] flex justify-center items-center bg-primary rounded-full w-[57.66px] aspect-square">

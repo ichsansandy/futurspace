@@ -7,7 +7,7 @@ import ContactMap from '../../components/Contact/ContactMap';
 
 export default function ContactPage() {
   return (
-    <div>
+    <div className="">
       <ContactHero />
       <ContactMap />
       <ContactContact />
