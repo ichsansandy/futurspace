@@ -15,13 +15,13 @@ export default function UnderConstruction() {
           </a>
         </span>
       </p>
-      <p className="flex gap-3 mt-4">
-        <span>Built by </span>
-        <span className="underline decoration-primary/50 hover:scale-105">
+      <p className="flex gap-3 items-center mt-4">
+        <span className="text-center">Built by </span>
+        <span className="underline decoration-primary/50 hover:scale-105 text-center">
           <a rel="noreferrer" target="_blank" href="https://github.com/madunn123/">Ramadhan Perkasa</a>
         </span>
-        <span> and </span>
-        <span className="underline decoration-primary/50 hover:scale-105">
+        <span className="text-center"> and </span>
+        <span className="underline text-center decoration-primary/50 hover:scale-105">
           <a rel="noreferrer" target="_blank" href="https://github.com/ichsansandy">Ichsan Sandy</a>
         </span>
       </p>

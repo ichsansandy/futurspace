@@ -1,11 +1,9 @@
-import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { BrandName, menus } from '../utils/mockAPI';
 import useStatusbar from '../hook/useStatusbar';
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Navbar({ isOpen, setIsOpen }) {
   const { statusInitialValue: status } = useStatusbar();
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -15,6 +13,9 @@ export default function Navbar() {
       <NavLink
         to="/"
         className="flex items-center gap-4 uppercase"
+        onClick={() => {
+          setIsOpen(false);
+        }}
       >
         <svg
           width="40"
@@ -86,7 +87,7 @@ export default function Navbar() {
       <nav
         className={`${
           isOpen ? 'flex translate-y-0' : 'flex scale-0 -translate-y-52 web:flex web:scale-100 web:translate-y-0'
-        } absolute items-center min-h-screen web:min-h-fit left-0 top-[100%] w-full box-border transition-all bg-inherit flex-col web:static web:flex-row web:justify-end gap-4 md:gap-5 xl:gap-14`}
+        } absolute items-center pb-24 web:pb-0 min-h-[90vh] web:min-h-fit left-0 top-[100%] w-full box-border transition-all ${pathname === '/about' ? 'bg-primary' : 'bg-white'}  flex-col justify-evenly web:static web:flex-row web:justify-end gap-4 md:gap-5 xl:gap-14`}
       >
         {menus.map((menu) => (
           <NavLink
