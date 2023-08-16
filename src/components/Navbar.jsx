@@ -8,7 +8,7 @@ export default function Navbar() {
   const { pathname } = useLocation();
 
   return (
-    <div className="relative flex items-center justify-between transition-all ">
+    <div className={`relative z-50 flex items-center justify-between transition-all ${pathname === '/about' && 'text-white'}`}>
       <NavLink
         to="/"
         className="flex items-center gap-4 uppercase"
@@ -59,8 +59,9 @@ export default function Navbar() {
             className={`${pathname === '/about' ? 'fill-primary' : 'fill-[#F9FAFF]'}`}
           />
         </svg>
-        <h3 className="text-primary uppercase hidden min-[375px]:block">{BrandName}</h3>
+        <h3 className={`uppercase hidden min-[375px]:block ${pathname === '/about' ? 'text-white' : 'text-primary'}`}>{BrandName}</h3>
       </NavLink>
+
       <button
         type="button"
         onClick={() => {
@@ -74,7 +75,7 @@ export default function Navbar() {
       <nav
         className={`${
           isOpen ? 'flex translate-y-0' : 'flex scale-0 -translate-y-52 web:flex web:scale-100 web:translate-y-0'
-        } absolute items-center min-h-screen web:min-h-fit left-0 top-[100%] w-full box-border transition-all bg-background flex-col web:static web:flex-row web:justify-end gap-4 md:gap-5 xl:gap-14`}
+        } absolute items-center min-h-screen web:min-h-fit left-0 top-[100%] w-full box-border transition-all bg-inherit flex-col web:static web:flex-row web:justify-end gap-4 md:gap-5 xl:gap-14`}
       >
         {menus.map((menu) => (
           <NavLink

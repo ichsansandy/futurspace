@@ -1,8 +1,8 @@
-import PricingContact from '../../components/Pricing/PricingContact';
-import PricingFAQ from '../../components/Pricing/PricingFAQ';
-import PricingHero from '../../components/Pricing/PricingHero';
-import PricingPricing from '../../components/Pricing/PricingPricing';
-import PricingSubscribe from '../../components/Pricing/PricingSubscribe';
+import PricingContact from '../../components/pricing/PricingContact';
+import PricingFAQ from '../../components/pricing/PricingFAQ';
+import PricingHero from '../../components/pricing/PricingHero';
+import PricingPricing from '../../components/pricing/PricingPricing';
+import PricingSubscribe from '../../components/pricing/PricingSubscribe';
 
 export default function PricingPage() {
   return (
