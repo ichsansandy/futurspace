@@ -29,7 +29,6 @@ export default {
       },
       backgroundImage: {
         'devsigner-logo': "url('./images/devsigner.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
       },
     },
   },

@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { NavLink, useLocation } from 'react-router-dom';
-import { BrandName, menus } from '../data/mockData';
+import { BrandName, menus } from '../utils/mockAPI';
+import useStatusbar from '../hook/useStatusbar';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { statusInitialValue: status } = useStatusbar();
   const { pathname } = useLocation();
 
   return (
@@ -60,6 +62,14 @@ export default function Navbar() {
           />
         </svg>
         <h3 className={`uppercase hidden min-[375px]:block ${pathname === '/about' ? 'text-white' : 'text-primary'}`}>{BrandName}</h3>
+
+        <div className="-mt-2 online-offline-status">
+          {
+            status
+              ? <div className="w-5 h-5 bg-green-400 rounded-full animate-pulse" />
+              : <div className="w-5 h-5 bg-gray-400 rounded-full animate-pulse" />
+          }
+        </div>
       </NavLink>
 
       <button
