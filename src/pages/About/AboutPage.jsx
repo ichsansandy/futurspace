@@ -9,7 +9,7 @@ import SubscribesSection from '../../components/about/Subscribe.section';
 export default function AboutPage() {
   return (
     <>
-      <div className="bg-primary absolute top-0 left-0 w-full h-[600px] web:h-[1370px]" />
+      <div className="bg-primary absolute top-0 left-0 w-full h-[650px] web:h-[1370px]" />
       <HeroSection />
       <DataSection />
       <ServicesSection />
