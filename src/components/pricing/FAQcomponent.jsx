@@ -10,7 +10,7 @@ export default function FAQcomponent({ question, answer }) {
       onClick={() => {
         setIsOpen(!isOpen);
       }}
-      className="flex items-center justify-between p-6 bg-white rounded-3xl"
+      className="flex items-center justify-between p-6 bg-white rounded-3xl shadow-custom-shadow"
     >
       <div className={`max-w-[85%] flex flex-col ${isOpen ? 'gap-2.5' : ''} text-left`}>
         <p className="font-bold web:text-[26px] leading-8">{question}</p>

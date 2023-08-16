@@ -156,7 +156,7 @@ export const mockAPIFooter = [
   },
 ];
 
-export const mockAPiDataSection = [
+export const Section = [
   {
     number: '3,000 +',
     title: 'happy members',
@@ -172,4 +172,32 @@ export const mockAPiDataSection = [
     title: 'years of service',
     description: 'We offer offices for lease by the day, by the week, or by the year.',
   },
+
+export const faqsList = [
+  {
+    question: 'What are the benefits of joining the Futurspace network?',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare',
+  },
+  {
+    question: 'What should I expect from the screening process?',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare',
+  },
+  {
+    question: 'Is Telephone service available?',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare',
+  },
+  {
+    question: 'Is the money refundable if I am unable to register?',
+    answer: 'Lorem ipsum dolor sit amet consectetur adipiscing elit elementum velit nunc tortor pulvinar ornare',
+  },
+];
+
+export const BrandName = 'futurspace';
+
+export const menus = [
+  { menu: 'about', href: '/about' },
+  { menu: 'pricing', href: '/pricing' },
+  { menu: 'offices', href: '/offices' },
+  { menu: 'spaces', href: '/spaces' },
+  { menu: 'contact us', href: '/contact' },
 ];

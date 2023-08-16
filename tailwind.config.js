@@ -12,11 +12,24 @@ export default {
       web: '940px',
     },
     extend: {
+      fontSize: {
+        h2: '48px',
+      },
+      lineHeight: {
+        h2: '67.2px',
+      },
+      boxShadow: {
+        'custom-shadow': '0px 4px 20px 0px rgba(0, 0, 0, 0.10)',
+      },
       colors: {
         primary: '#0192FE',
-        accent: '#c6e4fb',
+        accent: '#f0f6ff',
         background: '#fcfcfc',
         secondary: '#2E3135',
+      },
+      backgroundImage: {
+        'devsigner-logo': "url('./images/devsigner.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
       },
     },
   },

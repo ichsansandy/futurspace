@@ -1,51 +1,6 @@
 import { useState } from 'react';
 import { IoMdCheckmark } from 'react-icons/io';
-import { IoFlash } from 'react-icons/io5';
-import { FaStar } from 'react-icons/fa';
-import { RiVipDiamondFill } from 'react-icons/ri';
-
-const discount = 15;
-
-const pricing = [
-  {
-    planIcon: <IoFlash />,
-    planName: 'Silver',
-    pricePerMonth: 399,
-    planBenefit: [
-      { benefit: 'Coworking & Rooms', isCheck: true },
-      { benefit: 'High-speed Internet', isCheck: true },
-      { benefit: 'Explusive Workspace', isCheck: false },
-      { benefit: 'Customisable Room', isCheck: false },
-      { benefit: 'All-inclusive Pricing', isCheck: false },
-    ],
-  },
-  {
-    planIcon: <FaStar />,
-    planName: 'Gold',
-    pricePerMonth: 599,
-    planBenefit: [
-      { benefit: 'Coworking & Rooms', isCheck: true },
-      { benefit: 'High-speed Internet', isCheck: true },
-      { benefit: 'Explusive Workspace', isCheck: true },
-      { benefit: 'Customisable Room', isCheck: true },
-      { benefit: 'Meeting Room', isCheck: true },
-      { benefit: 'Private Office', isCheck: true },
-      { benefit: 'All-inclusive Pricing', isCheck: false },
-    ],
-  },
-  {
-    planIcon: <RiVipDiamondFill />,
-    planName: 'Platinum',
-    pricePerMonth: 999,
-    planBenefit: [
-      { benefit: 'Coworking & Rooms', isCheck: true },
-      { benefit: 'High-speed Internet', isCheck: true },
-      { benefit: 'Explusive Workspace', isCheck: true },
-      { benefit: 'Customisable Room', isCheck: true },
-      { benefit: 'All-inclusive Pricing', isCheck: true },
-    ],
-  },
-];
+import { discount, pricing } from '../../utils/pricingData';
 
 export default function PricingPricing() {
   const [isMtly, setisMonthly] = useState(true);
@@ -82,7 +37,7 @@ export default function PricingPricing() {
         {pricing.map((p) => (
           <div
             key={p.planName}
-            className="px-[8%] sm:px-[68.8px] py-[61.1px] flex flex-col gap-[43.3px] bg-white rounded-3xl  border-primary even:border-2 transition-all hover:scale-110 web:gap-8 web:px-[60px] web:py-[44.5px] web:h-fit"
+            className="shadow-custom-shadow px-[8%] sm:px-[68.8px] py-[61.1px] flex flex-col gap-[43.3px] bg-white rounded-3xl  border-primary even:border-2 transition-all hover:scale-110 web:gap-8 web:px-[60px] web:py-[44.5px] web:h-fit"
           >
             <div className="flex flex-col items-start gap-[43.3px]">
               <div className="text-white text-[30px] flex justify-center items-center bg-primary rounded-full w-[57.66px] aspect-square">

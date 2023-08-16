@@ -6,10 +6,11 @@ import ContactPage from './pages/Contact/ContactPage';
 import SpacesPage from './pages/Spaces/SpacesPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import UnderConstruction from './pages/UnderConstruction';
 
 function App() {
   return (
-    <div className="relative grid grid-cols-1 gap-16 bg-background web:gap-32 pt-[65px] pb-[100px] px-[7%] web:pt-[100px] web:pb-[140px] web:px-[8%]">
+    <div className="relative grid grid-cols-1 gap-16 web:gap-32 pt-[65px] pb-[100px] px-[7%] web:pt-[100px] web:pb-[140px] web:px-[8%]">
       <Navbar />
       <Routes>
         <Route
@@ -31,6 +32,10 @@ function App() {
         <Route
           path="/spaces"
           element={<SpacesPage />}
+        />
+        <Route
+          path="*"
+          element={<UnderConstruction />}
         />
       </Routes>
       <Footer />
