@@ -156,6 +156,23 @@ export const mockAPIFooter = [
   },
 ];
 
+export const Section = [
+  {
+    number: '3,000 +',
+    title: 'happy members',
+    description: 'We offer offices for lease by the day, by the week, or by the year.',
+  },
+  {
+    number: '12 +',
+    title: 'locations across the globe',
+    description: 'We offer offices for lease by the day, by the week, or by the year.',
+  },
+  {
+    number: '10 +',
+    title: 'years of service',
+    description: 'We offer offices for lease by the day, by the week, or by the year.',
+  },
+
 export const faqsList = [
   {
     question: 'What are the benefits of joining the Futurspace network?',
