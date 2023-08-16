@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/Home/HomePage';
 import AboutPage from './pages/About/AboutPage';
@@ -9,9 +10,11 @@ import Footer from './components/Footer';
 import UnderConstruction from './pages/UnderConstruction';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="relative grid grid-cols-1 gap-16 web:gap-32 pt-[65px] pb-[100px] px-[7%] web:pt-[100px] web:pb-[140px] web:px-[8%]">
-      <Navbar />
+    <div className={`${isOpen ? 'overflow-hidden h-screen web:overflow-auto ' : ' '} relative grid grid-cols-1 gap-16 web:gap-32 pt-[65px] pb-[100px] px-[7%] web:pt-[100px] web:pb-[140px] web:px-[8%]`}>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <Routes>
         <Route
           path="/"
