@@ -19,16 +19,17 @@ export default {
         h2: '67.2px',
       },
       boxShadow: {
-        'custom-shadow': '0px 4.4795050621032715px 70px 0px rgba(0, 0, 0, 0.10)',
+        'custom-shadow': '0px 4px 20px 0px rgba(0, 0, 0, 0.10)',
       },
       colors: {
         primary: '#0192FE',
-        accent: '#c6e4fb',
+        accent: '#f0f6ff',
         background: '#fcfcfc',
         secondary: '#2E3135',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'devsigner-logo': "url('./images/devsigner.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
       },
     },
   },

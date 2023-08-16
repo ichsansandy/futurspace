@@ -6,6 +6,7 @@ import ContactPage from './pages/Contact/ContactPage';
 import SpacesPage from './pages/Spaces/SpacesPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import UnderConstruction from './pages/UnderConstruction';
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
         <Route
           path="/spaces"
           element={<SpacesPage />}
+        />
+        <Route
+          path="*"
+          element={<UnderConstruction />}
         />
       </Routes>
       <Footer />

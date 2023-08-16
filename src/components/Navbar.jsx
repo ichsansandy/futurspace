@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { NavLink, useLocation } from 'react-router-dom';
-import { BrandName, menus } from '../data/mockData';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { BrandName, menus } from '../utils/mockAPI';
 import useStatusbar from '../hook/useStatusbar';
 
 export default function Navbar() {
@@ -101,12 +101,12 @@ export default function Navbar() {
             {menu.menu}
           </NavLink>
         ))}
-        <button
+        <Link
+          to="/signup"
           className="text-white bg-primary px-[40px] py-[15px] rounded-[50px] hover:scale-105 "
-          type="button"
         >
           Sign up
-        </button>
+        </Link>
       </nav>
     </div>
   );

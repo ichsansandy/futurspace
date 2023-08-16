@@ -1,9 +1,3 @@
-import google from '../../../public/images/google-removebg-preview.png';
-import creativeMarket from '../../../public/images/creative-market-removebg-preview.png';
-import airbnb from '../../../public/images/airbnb.png';
-import shopify from '../../../public/images/shopify-removebg-preview.png';
-import amazon from '../../../public/images/amazon-removebg-preview.png';
-
 export default function ContactClient() {
   return (
     <div className="flex flex-col sm:gap-11 items-center opacity-50 py-[60px]">
@@ -14,27 +8,27 @@ export default function ContactClient() {
         <img
           className="w-[15%] web:w-[10%]"
           alt="google"
-          src={google}
+          src="./images/google-removebg-preview.png"
         />
         <img
           className="w-[15%] web:w-[10%]"
           alt="creativeMarket"
-          src={creativeMarket}
+          src="./images/creative-market-removebg-preview.png"
         />
         <img
           className="w-[15%] web:w-[10%]"
           alt="airbnb"
-          src={airbnb}
+          src="./images/airbnb.png"
         />
         <img
           className="w-[15%] web:w-[10%]"
           alt="shopify"
-          src={shopify}
+          src="./images/shopify-removebg-preview.png"
         />
         <img
-          className="w-[15%] web:w-[10%] mt-3"
+          className="w-[15%] web:w-[10%] mt-1"
           alt="amazon"
-          src={amazon}
+          src="./images/amazon-removebg-preview.png"
         />
       </div>
     </div>
