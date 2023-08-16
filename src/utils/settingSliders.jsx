@@ -3,7 +3,8 @@ import { NextArrow, PrevArrow } from '../components/utils/arrow-comp/ArrowSlider
 export const Settings = {
   dots: false,
   infinite: false,
-  speed: 500,
+  speed: 1000,
+  cssEase: 'linear',
   slidesToShow: 4,
   slidesToScroll: 4,
   initialSlide: 0,
@@ -23,9 +24,9 @@ export const Settings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
         arrows: false,
       },
     },
