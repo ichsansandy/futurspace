@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { BrandName, menus } from '../utils/mockAPI';
 import useStatusbar from '../hook/useStatusbar';
 
@@ -8,6 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { statusInitialValue: status } = useStatusbar();
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   return (
     <div className={`relative z-50 flex items-center justify-between transition-all ${pathname === '/about' && 'text-white'}`}>
@@ -102,6 +103,9 @@ export default function Navbar() {
         <button
           className="text-white bg-primary px-[40px] py-[15px] rounded-[50px] hover:scale-105 "
           type="button"
+          onClick={() => {
+            navigate('/signup');
+          }}
         >
           Sign up
         </button>

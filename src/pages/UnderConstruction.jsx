@@ -3,8 +3,8 @@ export default function UnderConstruction() {
     <div className="relative flex flex-col items-center justify-center">
       <h2>
         <span className="underline decoration-primary/50">Page</span>
-        is Under
-        <span className="text-primary"> Construction</span>
+        <span> is Under </span>
+        <span className="text-primary">Construction</span>
       </h2>
       <p className="flex items-center gap-4 py-3 mt-4">
         Design by
