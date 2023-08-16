@@ -28,7 +28,8 @@ export default {
         secondary: '#2E3135',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'devsigner-logo': "url('./images/devsigner.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
       },
     },
   },
