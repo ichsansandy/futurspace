@@ -19,7 +19,7 @@ export default {
         h2: '67.2px',
       },
       boxShadow: {
-        'custom-shadow': '0px 4.4795050621032715px 70px 0px rgba(0, 0, 0, 0.10)',
+        'custom-shadow': '0px 4px 20px 0px rgba(0, 0, 0, 0.10)',
       },
       colors: {
         primary: '#0192FE',
