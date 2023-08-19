@@ -1,8 +1,8 @@
-# React + Vite
+# Futurspace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Introduction page for office space solutions
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Design by [Devdesigner Labs](https://www.instagram.com/devsignerlabs/)
+- Built by
+  - [Ramadhan Perkasa](https://github.com/madunn123/)
+  - [Ichsan Sandy](https://github.com/ichsansandy/)

@@ -87,7 +87,7 @@ export default function Navbar({ isOpen, setIsOpen }) {
       <nav
         className={`${
           isOpen ? 'flex translate-y-0' : 'flex scale-0 -translate-y-52 web:flex web:scale-100 web:translate-y-0'
-        } absolute items-center pb-24 web:pb-0 min-h-[90vh] web:min-h-fit left-0 top-[100%] w-full box-border transition-all ${pathname === '/about' ? 'bg-primary' : 'bg-white'}  flex-col justify-evenly web:static web:flex-row web:justify-end gap-4 md:gap-5 xl:gap-14`}
+        } absolute items-center pb-24 web:pb-0 min-h-[70vh] web:min-h-fit left-0 top-[100%] w-full box-border transition-all ${pathname === '/about' ? 'bg-primary' : 'bg-white'}  flex-col justify-evenly web:static web:flex-row web:justify-end gap-4 md:gap-5 xl:gap-14`}
       >
         {menus.map((menu) => (
           <NavLink
