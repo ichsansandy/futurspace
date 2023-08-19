@@ -4,7 +4,7 @@ import { TiGroup } from 'react-icons/ti';
 
 export default function HeroSection() {
   return (
-    <section className="z-50 flex flex-col gap-10 text-white web:gap-20">
+    <section className="z-10 flex flex-col gap-10 text-white web:gap-20">
       <div className="grid grid-cols-1 gap-4 text-center web:gap-0 web:grid-cols-2 web:text-start">
         <span className="text-2xl font-bold web:text-5xl web:max-w-sm web:leading-snug">About our company</span>
 
