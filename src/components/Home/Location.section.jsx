@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { FaLocationDot } from 'react-icons/fa6';
 import { MockAPILocation } from '../../utils/mockAPI';
+import AnimationAOS from '../utils/Animation/AnimationAOS';
 
 export default function LocationSection() {
   return (
@@ -14,8 +16,16 @@ export default function LocationSection() {
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-6">
               <span className="text-sm font-bold uppercase web:text-lg text-primary">our offices</span>
-              <span className="text-2xl font-bold web:max-w-2xl web:text-5xl web:leading-snug">Discover the Location that Best Fits Your Business Needs</span>
-              <p className="m-0 text-sm web:text-xl opacity-60">As we headstart into this new normal, we are ensuring your workspace experience remains exceptional.</p>
+              <span className="text-2xl font-bold web:max-w-2xl web:text-5xl web:leading-snug">
+                <AnimationAOS>
+                  Discover the Location that Best Fits Your Business Needs
+                </AnimationAOS>
+              </span>
+              <p className="m-0 text-sm web:text-xl opacity-60">
+                <AnimationAOS>
+                  As we headstart into this new normal, we are ensuring your workspace experience remains exceptional.
+                </AnimationAOS>
+              </p>
             </div>
           </div>
 

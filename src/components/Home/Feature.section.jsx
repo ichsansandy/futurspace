@@ -2,6 +2,7 @@ import React from 'react';
 import { FaLocationDot } from 'react-icons/fa6';
 import { MockAPIFeatures } from '../../utils/mockAPI';
 import Disclosure from '../utils/disclosure-comp/Disclosure';
+import AnimationAOS from '../utils/Animation/AnimationAOS';
 
 export default function FeatureSection() {
   return (
@@ -24,7 +25,9 @@ export default function FeatureSection() {
 
       <div className="flex flex-col gap-5 web:gap-6 wrapper-text">
         <span className="mb-4 text-2xl font-bold text-center web:leading-snug web:text-start web:mb-6 web:max-w-xl web:text-5xl">
-          A complete coworking space solution for your business and team
+          <AnimationAOS>
+            A complete coworking space solution for your business and team
+          </AnimationAOS>
         </span>
 
         {
