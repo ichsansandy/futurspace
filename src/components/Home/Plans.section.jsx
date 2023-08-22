@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { MockAPIPlans } from '../../utils/mockAPI';
+import AnimationAOS from '../utils/Animation/AnimationAOS';
 
 export default function PlansSection() {
   return (
@@ -9,12 +11,18 @@ export default function PlansSection() {
       <div className="flex flex-col gap-6 text-center wrapper">
         <span className="text-sm font-bold uppercase web:text-lg text-primary">why serviced office</span>
         <span className="text-2xl font-bold text-center web:leading-snug web:mx-auto web:max-w-3xl web:text-5xl">
-          We`ve helped thousands of
-          <br className="hidden web:block" />
-          fast-growing startups and teams
+          <AnimationAOS>
+            We`ve helped thousands of
+            <br className="hidden web:block" />
+            fast-growing startups and teams
+          </AnimationAOS>
         </span>
 
-        <p className="m-0 text-sm web:max-w-4xl web:mx-auto web:text-lg text-secondary opacity-60">Grow without restriction. By giving you space that can be changed as your business grows. Only pay for the space you use with everything you need to be included in one price.</p>
+        <p className="m-0 text-sm web:max-w-4xl web:mx-auto web:text-lg text-secondary opacity-60">
+          <AnimationAOS>
+            Grow without restriction. By giving you space that can be changed as your business grows. Only pay for the space you use with everything you need to be included in one price.
+          </AnimationAOS>
+        </p>
       </div>
 
       <div className="grid grid-cols-1 gap-6 web:gap-10 web:grid-cols-3">

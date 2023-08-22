@@ -2,13 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import { MockAPIServices } from '../../utils/mockAPI';
+import AnimationAOS from '../utils/Animation/AnimationAOS';
 
 export default function Services() {
   return (
     <section className="flex flex-col gap-10">
       <div className="flex flex-col gap-4">
         <span className="text-sm font-bold text-center capitalize web:text-lg text-primary web:text-start">our services</span>
-        <span className="text-2xl font-bold text-center web:leading-snug web:max-w-5xl web:text-5xl web:text-start">Flexible Solutions for Your Business - Choose What Works Best for You</span>
+        <span className="text-2xl font-bold text-center web:leading-snug web:max-w-5xl web:text-5xl web:text-start">
+          <AnimationAOS>
+            Flexible Solutions for Your Business - Choose What Works Best for You
+          </AnimationAOS>
+        </span>
       </div>
 
       <div className="grid grid-cols-1 gap-6 web:gap-12 web:grid-cols-3">
